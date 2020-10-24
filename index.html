@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>國立科技高中─校園社團介紹網</title>    
-<style type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立科技高中─校園社團介紹網</title>
+    <style>
     *{
         margin:0;
         padding:0;
         list-style: none;
-    }
+        font-family: "標楷體";
+        font-weight: medium;
+        font-size: 16px;
+    }   
     body{
         width: 1024px;
         height: 768px;
@@ -17,16 +20,9 @@
         border: 1px solid #000000;
     }
     .banner{
-        display: flex;
         width: 1000px;
         height: 65px;
-        margin: auto;
-        align-items: center;
-        box-sizing: border-box;
-    }
-    .banner img{
-        width: 994px;
-        height: 60px;
+        margin:auto;
     }
     .content{
         display: flex;
@@ -35,30 +31,20 @@
         box-sizing: border-box;
     }
     .menu{
-        width: 215px;
+        flex-basis: 215px;
         text-align: center;
         border-right: 1px solid #000;
-        box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-between;
     }
     h1{
-        font-family: "標楷體";
-        font-weight: 500;
         font-size: 24px;
         color: #f0f;
-        /* text-decoration: underline;
-        text-decoration-color: #000; */
-            border-bottom: 1px solid #000;
-            width: 110px;
-        margin: 10px;
-    }
-    .wrap{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 658px;
-        border-bottom:3px double #000;
+        border-bottom: 1px solid #000;
+        width: 110px;
+        margin: 10px auto;
     }
     .select{
         width: 200px;
@@ -66,25 +52,21 @@
         background-image: url(image/menu1.png);
         background-repeat: no-repeat;
         line-height: 35px;
-        margin: 1px 0;
     }
     .select a{
-        font-size: 16px;
+        
         color: #000;
         text-decoration: none;
-        font-family: "標楷體";
-        font-weight: 500;
     }
     .select:hover{
         background-image: url(image/menu2.png);
     }
     .update{
+        width: 215px;
         height: 25px;
-        text-align: center;
-        font-style: 16px;
-        font-family: "標楷體";
-        font-weight: medium;
-        line-height: 25px;
+        line-height: 22px;
+        box-sizing: border-box;
+        border-top:3px double #000;
     }
     .container{
         width: 770px;
@@ -93,10 +75,8 @@
     marquee{
         width: 770px;
         height: 29px;
-        font-family: "標楷體";
         font-size: 24px;
         color: #00f;
-        line-height: 29px;
         vertical-align: middle;
     }
     iframe{
@@ -106,22 +86,18 @@
     }
     .footer{
         height: 20px;
-        display: flex;
-        font-family: "標楷體";
-        justify-content: center;
-        font-style: 16px;
-        align-items: center;
+        text-align: center;
         border-top: 1px solid #000;
         box-sizing: border-box;
     }
-</style>
+    </style>
 </head>
 <body>
-    <div class="banner">
-        <a href="index1.html" target="_self">
+<div class="banner">
+        <a href="index2.html" target="_self">
         <img src="image/logo.png" alt="「國立科技高中─校園社團介紹網"></a>
-    </div>
-    <div class="content">
+</div>
+<div class="content">
     <div class="menu">     
         <div class="wrap">
             <h1>社團介紹</h1>
@@ -134,7 +110,7 @@
         <div class="select">
             <a href="#">棒球社</a>
         </div>
-         <div class="select">
+        <div class="select">
         <a href="#">羽球社</a>
         </div>
         <div class="select">
@@ -143,15 +119,15 @@
         <div class="select">
         <a href="#">童軍社</a>
         </div>
-    </div>
-    <div class="update">
+        </div>
+        <div class="update">
         <p>最近更新日期：yyyy/mm/dd</p>
+        </div>
     </div>
-</div>
-<div class="container">
+    <div class="container">
     <marquee>歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與</marquee>
     <iframe src="main1.html" frameborder="0" name="imain"></iframe>
-</div>
+    </div>
 </div>
 <div class="footer">
     <p>網頁設計及維護：XX○○○</p>
